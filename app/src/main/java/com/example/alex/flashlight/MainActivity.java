@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
     //ИСПРАВИТЬ СТРОБОСКОП
 
     //Добавить окно, если человек не дал разрешение на запуск камеры
-    //После перезапуска не сразу срабатывает кнопка включения
 
     private int sound;
     private SoundPool soundPool;
