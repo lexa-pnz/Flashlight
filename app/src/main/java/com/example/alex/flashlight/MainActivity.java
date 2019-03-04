@@ -244,17 +244,19 @@ public class MainActivity extends AppCompatActivity {
 
                     setFlashLightOn();
                     playSound();
+                    //changeIconOn();
 
-                    //Toast toast_flash_on = Toast.makeText(MainActivity.this, "Свет ON", Toast.LENGTH_SHORT);
-                    //toast_flash_on.show();
+                    Toast toast_flash_on = Toast.makeText(MainActivity.this, "Свет ON", Toast.LENGTH_SHORT);
+                    toast_flash_on.show();
                 }
                 else if (mode.equals(Parameters.FLASH_MODE_TORCH))
                 {
                     setFlashLightOff();
                     playSound();
+                    //changeIconOff();
 
-                    //Toast toast_flash_off = Toast.makeText(MainActivity.this, "Свет OFF", Toast.LENGTH_SHORT);
-                    //toast_flash_off.show();
+                    Toast toast_flash_off = Toast.makeText(MainActivity.this, "Свет OFF", Toast.LENGTH_SHORT);
+                    toast_flash_off.show();
                 }
                 break;
 
@@ -330,7 +332,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setFlashLightOn() {
-        changeIconOn();
 
         new Thread(new Runnable() {
             @Override
@@ -361,7 +362,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setFlashLightOff() {
-        changeIconOff();
 
         new Thread(new Runnable() {
             @Override
